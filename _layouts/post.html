@@ -15,7 +15,7 @@ layout: default
         <div class="column col-12">
           <ul class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="{{ site.url }}{{ site.baseurl }}">Help Center Home</a>
+              <a href="{{ site.baseurl }}/">Home</a>
             </li>
             <li class="breadcrumb-item">
               <a href="../{{ page.category }}">{{ page_category.name }}</a>
@@ -24,7 +24,7 @@ layout: default
               <a href="#">{{ page.title }}</a>
             </li>
           </ul>
-          <h2 class="text-light text-bold">{{ page.title }}</h2>
+          <h2 class="text-light text-bold" style="color:#FFCC00!important">{{ page.title }}</h2>
           <p class="text-light mb-0">{{ page.short-description }}</p>
         </div>
         <div class="column col-12">
@@ -47,13 +47,7 @@ layout: default
                     <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }} - {% include reading-time.html %}</p>
                   </div>
                 {% endif %}
-
               {{ content }}
-
-              
-            
-
-
             </div>
           </div>
         </div>

@@ -15,13 +15,13 @@ layout: default
       <div class="column col-12">
         <ul class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="{{ site.url }}{{ site.baseurl }}">Help Center Home</a>
+            <a href="{{ site.baseurl }}/">Home</a>
           </li>
           <li class="breadcrumb-item">
             <a href="#">{{ page_category.name }}</a>
           </li>
         </ul>
-        <h2 class="text-light text-bold">{{ page_category.name }}</h2>
+        <h2 class="text-light text-bold" style="color:#FFCC00!important">{{ page_category.name }}</h2>
         <p class="text-light mb-2">{{ page_category.description }}</p>
       </div>
       {% if page.has-subcategories == true %}
